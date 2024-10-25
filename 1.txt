@@ -1,0 +1,147 @@
+
+Stack test
+	Default constructor: time: 2
+	Empty func: res: true, time: 21
+	Push func: time: 2
+	Size func: res: 3, time: 0
+	Operator=: res: 3 2 1, time: 1
+	Top func: res: 3, time: 0
+	Pop func: res: 2, time: 0
+	Two empty stacks:
+		==: true
+		!=: false
+		<: false
+		<=: true
+		>: false
+		>=: true
+		time: 38
+	Two not empty stacks:
+		==: false
+		!=: true
+		<: true
+		<=: true
+		>: false
+		>=: false
+		time: 35
+
+Vector test
+	Empty constructor: size: 0, time: 25
+	Constructor with params: size: 10, value: 0, time: 1
+	Push_back func: size: 2, values: 42 21, time: 0
+	Begin func: value: 42, time: 0
+	End func: time: 0
+	Constructor with iterator: size: 2, values: 42 21, time: 0
+	Copy constructor: size: 2, values: 42 21, time: 0
+	Operator=: size: 4, values: 42 21, time: 1
+	Rbegin func: value: 21, time: 0
+	Rend func: values: 21 42 , time: 0
+	Max size func: value: 4611686018427387903, time: 0
+	Resize(1) func when < size vector: size: 1, values: 42, time: 0
+	Capacity func: value: 2, time: 0
+	Resize(3) func when > capacity vector: capacity: 4, values: 42 0 0, time: 0
+	Empty func: value: false, time: 0
+	Reserve(6) func: capacity: 6, values: 42 0 0, time: 0
+	Operator[](0) func: value: 42, time: 0
+	exception: vector
+	Front func: value: 42, time: 0
+	Back func: value: 0, time: 0
+	Data func: value: 42 0 0, time: 0
+	Before assign: capacity: 2, value: 42 21
+	Assign with val func: capacity: 5, value: 999 999 999 999 999, time: 1
+	Before assign: capacity: 6, value: 42 0 0
+	Assign with iter func: capacity: 6, value: 999, time: 1
+	Push back func: capacity: 10, value: 999 999 999 999 999 5, time: 1
+	Pop back func: capacity: 10, value: 999 999 999 999 999, time: 0
+	Clear func: capacity: 10 , time: 0
+	Before insert: capacity: 10, value: 1 2 
+	Insert value func: capacity: 10, value: 42 3 4 5, time: 1
+	Before insert: capacity: 10, value: 1 2 
+	Insert value n count func: capacity: 20, value: 21 21 21 21 21 42 3 4 5, time: 1
+	Before insert: capacity: 20, value: 1 2 21 21 21 21 21
+	Insert with iter func: capacity: 20, value: 999 999 999 42 3 4 5, time: 0
+	Before erase: capacity: 20, value: 1 2 21 21 21 21 21 999 999 999
+	Erase func: capacity: 20, value: 3 4 5, time: 1
+	Before erase: capacity: 20, value: 1 2 21 21 21 21 21 
+	Erase with iter func: capacity: 20, value: 3 4 5 , time: 1
+	Before swap: first vector values: 1 2 21 21 21 21 21 3 4 5
+	Before swap: second vector values: 999 999 999
+	After swap: first vector values: 999 999 999
+	After swap: second vector values: 1 2 21 21 21 21 21 3 4 5
+	time: 1
+	Get allocator func: max size: 4611686018427387903, time: 0
+	Two empty vectors:
+		==: true
+		!=: false
+		<: false
+		<=: true
+		>: false
+		>=: true
+		time: 36
+	Two not empty vectors:
+		==: false
+		!=: true
+		<: true
+		<=: true
+		>: false
+		>=: false
+		time: 35
+	Before swap: first vector values: 999 999 999
+	Before swap: second vector values: 1 2 21 21 21 21 21 3 4 5
+	After swap: first vector values: 1 2 21 21 21 21 21 3 4 5
+	After swap: second vector values: 999 999 999
+	time: 1
+
+Map test
+	Empty constructor: size: 0, time: 52
+	Insert func insert: size: 1 values: 1=99 true, time: 1
+	Insert func not insert: size: 1 values: 1=99 false, time: 1
+	Constructor with iter: size: 3 values: 1=99 2=88 3=77 , time: 2
+	Copy constructor: size: 3 values: 1=99 2=88 3=77 , time: 3
+	Operator=: size: 3 values: 1=99 2=88 3=77 , time: 3
+	Get allocator func: max size value: 2305843009213693951, time: 0
+	exception: map::at: key not found
+	Operator[] not found: size: 4 func res: 0 values: 1=99 2=88 3=77 4=0 , time: 0
+	Operator[] found: size: 4 func res: 77 values: 1=99 2=88 3=77 4=0 , time: 1
+	Begin func: value: 1=99, time: 0
+	End func: value: 0=0, time: 0
+	Rbegin func: value: 4=0, time: 1
+	Rend func: size: 4 values: 4=0 3=77 2=88 1=99 , time: 0
+	Empty func: value: false, time: 0
+	Size func: value: 4, time: 0
+	Size func: value: 461168601842738790, time: 1
+	Clear func: size: 0 values: , time: 1
+	Before insert: size: 4 values: 1=99 2=88 3=77 4=0 
+	Insert func with pos: size: 5 values: 6=44 , time: 1
+	Before insert: size: 5 values: 1=99 2=88 3=77 4=0 6=44 
+	Insert func with pos: size: 6 values: 3=77 4=0 5=55 6=44 , time: 1
+	Insert func with iters: size: 6 values: 1=99 2=88 3=77 4=0 5=55 6=44 , time: 4
+	Erase func with pos: size: 5 values: 1=99 2=88 3=77 5=55 6=44 , time: 1
+	Erase func with iters: size: 2 values: 1=99 6=44 , time: 2
+	Erase func with val: size: 1 values: 1=99 , time: 0
+	Before swap: first map: values: 1=99 2=88 3=77 4=0 5=55 6=44  second map: values: 1=99 
+	After swap: first map: values: 1=99  second map: values: 1=99 2=88 3=77 4=0 5=55 6=44 , time: 10
+	Count func: value: 0, time: 1
+	Find func: value: 6=44, time: 0
+	Equal range func: values: 6=44 8=22, time: 2
+	Lower bound func: value: 6=44, time: 1
+	Lower bound func: value: 8=22, time: 1
+	Key compare func: value: true, time: 0
+	Value compare func: value: true, time: 0
+	Two empty maps:
+		==: true
+		!=: false
+		<: false
+		<=: true
+		>: false
+		>=: true
+		time: 37
+	Two not empty maps:
+		==: false
+		!=: true
+		<: true
+		<=: true
+		>: false
+		>=: false
+		time: 36
+	Before swap: first map: values: 1=99  second map: values: 1=99 2=88 3=77 4=0 5=55 6=44 8=22 
+	After swap: first map: values: 1=99 2=88 3=77 4=0 5=55 6=44 8=22  second map: values: 1=99 , time: 7
